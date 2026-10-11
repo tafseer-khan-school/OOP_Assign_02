@@ -1,8 +1,13 @@
 package edu.txst.assignment2;
 
 class Rectangle implements Shape {
-    private double width;
-    private double length;
+    private final double width;
+    private final double length;
+
+    public Rectangle(double width, double length) {
+        this.width = width;
+        this.length = length;
+    }
 
     @Override
     public double getArea() {

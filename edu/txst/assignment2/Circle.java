@@ -1,7 +1,11 @@
 package edu.txst.assignment2;
 
 class Circle implements Shape {
-    private double radius;
+    private final double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
 
     @Override
     public double getArea() {
