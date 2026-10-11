@@ -3,13 +3,12 @@ package edu.txst.assignment2;
 class Circle implements Shape {
     private double radius;
 
-
     public double getArea() {
-        return 0;
+        return Math.PI * Math.pow(radius, 2);
     };
 
     public String getClassName() {
-        return "";
+        return "Circle";
     };
 
     @Override
